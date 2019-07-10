@@ -48,6 +48,12 @@ class Configuration:
             'light',
         ]).strip().lower()
 
+        self.cheat_colorstyle = self._select([
+            os.environ.get('CHEAT_COLORSTYLE'),
+            config.get('CHEAT_COLORSTYLE'),
+            'default',
+        ]).strip().lower()
+
         # self.cheat_user_dir
         self.cheat_user_dir = self._select(
             map(os.path.expanduser,
