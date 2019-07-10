@@ -35,6 +35,6 @@ setup(
     ],
     data_files=[
         (cheat_path, cheat_files),
-        ('/etc', ['config/cheat']),
+        # ('/etc', ['config/cheat']),
     ],
 )
